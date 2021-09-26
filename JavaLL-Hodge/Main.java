@@ -1,13 +1,17 @@
 public class Main {
     public static void main(String[] args){
-        studentProfile profileOne = new studentProfile("Niraj","Kandpal",2020,
-                10, "Physics", 2023);
-        studentProfile profileTwo = new studentProfile("Vivek","lohani",2019,10,
-                "Physics",2022);
+        Triangle triangleA = new Triangle(15,8,15,8,17);
+        Triangle triangleB = new Triangle(3,2.598,3,3,3);
 
-        profileTwo.incrementExpectedGraduationyear();
-        System.out.println(profileTwo.expectedYearToGraduate);
+        double triangleAArea = triangleA.findArea();
+        System.out.println(triangleAArea);
 
+        double triangleBArea = triangleB.findArea();
+        System.out.println(triangleBArea);
+
+        System.out.println(triangleA.sideLenThree);
+        System.out.println(triangleB.base);
+        System.out.println(Triangle.numOfSides);
 
     }
 }
